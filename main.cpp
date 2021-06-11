@@ -3,7 +3,6 @@
 
 
 int main() {
-  std::cout << "Hello, World!" << std::endl;
   RedBlackTree tree;
   tree.insert("Hello");
   tree.insert("World");
