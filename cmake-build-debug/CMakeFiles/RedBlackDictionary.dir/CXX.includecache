@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackNode.h
+iostream
+-
+string
+-
+
+/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackTree.h
+RedBlackNode.h
+/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackNode.h
+iostream
+-
+string
+-
+
+/Users/Youssef/CLionProjects/RedBlackDictionary/main.cpp
+iostream
+-
+RedBlackTree.h
+/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackTree.h
+
