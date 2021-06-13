@@ -384,3 +384,26 @@ void RedBlackTree::printTree() {
     printHelper(this->root, "", true);
   }
 }
+
+int RedBlackTree::height(NodePtr root) {
+  if(root == TNULL){
+    return 0;
+  }
+  leftHeight = height(root->left);
+  rightHeight = height(root->right);
+  return std::max(leftHeight,rightHeight);
+}
+//This return the actual tree height
+int RedBlackTree::printHeight(int oldHeight){
+  if(oldHeight==0)
+    return 0
+  else
+    return oldHeight-1;
+}
+
+int RedBlackTree::size(NodePtr node){
+  if(node == TNULL)
+    return 0
+  else
+    return(size(node->left)+ 1 + size(node.right));
+}
