@@ -56,6 +56,10 @@ public:
 
   void deleteNode(string data);
   void printTree();
+  
+  int height(NodePtr root);
+  int printHeight(int oldHeight);
+  int size(NodePtr node);
 };
 
 #endif //REDBLACK_CMAKE_BUILD_DEBUG_REDBLACKTREE_H
