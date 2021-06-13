@@ -8,8 +8,8 @@ Youssef's Tasks:
 
 Ahmed's Tasks: 
 
-1. Print Tree Height
-2. Print Tree Size
+1. Print Tree Height ✅
+2. Print Tree Size ✅
 
 Rwan's Tasks:
 
