@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackNode.cpp" "/Users/Youssef/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackNode.cpp.o"
-  "/Users/Youssef/CLionProjects/RedBlackDictionary/RedBlackTree.cpp" "/Users/Youssef/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackTree.cpp.o"
-  "/Users/Youssef/CLionProjects/RedBlackDictionary/main.cpp" "/Users/Youssef/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/main.cpp.o"
+  "E:/6th term/ds2/assignment1/ass2/RedBlackNode.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackNode.cpp.obj"
+  "E:/6th term/ds2/assignment1/ass2/RedBlackTree.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackTree.cpp.obj"
+  "E:/6th term/ds2/assignment1/ass2/main.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

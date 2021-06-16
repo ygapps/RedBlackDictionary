@@ -1,7 +1,9 @@
 //
 // Created by Youssef on 6/11/21.
 //
-
+#include <iostream>
+#include <fstream>
+#include <string>
 #include "RedBlackTree.h"
 
 void RedBlackTree::initializeNULLNode(NodePtr node, NodePtr parent) {
@@ -48,6 +50,12 @@ NodePtr RedBlackTree::searchTreeHelper(NodePtr node, string key) {
     return searchTreeHelper(node->left, key);
   }
   return searchTreeHelper(node->right, key);
+}
+bool RedBlackTree::searchTree(string k) {
+    NodePtr search_helper_result= searchTreeHelper(this->root,k);
+    if(search_helper_result==TNULL)return false;
+
+    return true;
 }
 
 // For balancing the tree after deletion
@@ -248,9 +256,7 @@ void RedBlackTree::postorder() {
   postOrderHelper(this->root);
 }
 
-NodePtr RedBlackTree::searchTree(string k) {
-  return searchTreeHelper(this->root, k);
-}
+
 
 NodePtr RedBlackTree::minimum(NodePtr node) {
   while (node->left != TNULL) {
@@ -340,6 +346,7 @@ void RedBlackTree::insert(string key) {
 
   NodePtr y = nullptr;
   NodePtr x = this->root;
+  this->tree_size++;
 
   while (x != TNULL) {
     y = x;
@@ -389,21 +396,60 @@ int RedBlackTree::height(NodePtr root) {
   if(root == TNULL){
     return 0;
   }
-  leftHeight = height(root->left);
-  rightHeight = height(root->right);
-  return std::max(leftHeight,rightHeight);
+  int leftHeight = height(root->left);
+  int rightHeight = height(root->right);
+  return std::max(leftHeight,rightHeight)+1;
 }
 //This return the actual tree height
 int RedBlackTree::printHeight(int oldHeight){
   if(oldHeight==0)
-    return 0
+    return 0;
   else
     return oldHeight-1;
 }
-
-int RedBlackTree::size(NodePtr node){
-  if(node == TNULL)
-    return 0
-  else
-    return(size(node->left)+ 1 + size(node.right));
+int RedBlackTree::getSize()
+{
+    return  this->tree_size;
 }
+/*int RedBlackTree::size(NodePtr node){
+  if(node == TNULL)
+    return 0;
+  else
+    return(size(node->left)+ 1 + size(node->right));
+}*/
+void RedBlackTree::load(string filename) {
+    RedBlackTree tree;
+
+       string word;
+        int count=0;
+        fstream file;
+        file.open(filename,ios::in);//read
+        if (file.is_open()) {
+            while (getline(file, word)) {
+                file >> word;
+                tree.insert(word);
+                count++;
+
+
+            }
+        }
+            else
+            {
+                cout<<"error opening file\n";
+                exit(1);
+            }
+
+            file.close();
+            cout<<"Dictionary Loaded Successfully...!\n";
+            cout<<"..........................................\n";
+            cout<<"size of dictionary before insertion :"<<count<<"\n";
+            cout<<"..........................................\n";
+            cout<<"Height of dictionary before insetion:" << printHeight(tree.height(tree.root))<<"\n";
+            cout<<"..........................................\n";
+
+        }
+
+
+
+
+

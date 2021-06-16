@@ -13,6 +13,7 @@ class RedBlackTree {
 private:
   NodePtr root;
   NodePtr TNULL;
+  int tree_size;
 
   void initializeNULLNode(NodePtr node, NodePtr parent);
 
@@ -36,13 +37,14 @@ public:
     TNULL->left = nullptr;
     TNULL->right = nullptr;
     root = TNULL;
+    tree_size = 0;
   }
 
   void preorder();
   void inorder();
   void postorder();
 
-  NodePtr searchTree(string k);
+  bool searchTree(string k);
   NodePtr minimum(NodePtr node);
   NodePtr maximum(NodePtr node);
   NodePtr successor(NodePtr x);
@@ -51,6 +53,7 @@ public:
   void leftRotate(NodePtr x);
   void rightRotate(NodePtr x);
   void insert(string key);
+  void load(string filename);
 
   NodePtr getRoot();
 
@@ -60,6 +63,7 @@ public:
   int height(NodePtr root);
   int printHeight(int oldHeight);
   int size(NodePtr node);
+  int getSize();
 };
 
 #endif //REDBLACK_CMAKE_BUILD_DEBUG_REDBLACKTREE_H
