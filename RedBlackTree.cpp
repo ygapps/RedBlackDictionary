@@ -417,7 +417,7 @@ int RedBlackTree::getSize()
   else
     return(size(node->left)+ 1 + size(node->right));
 }*/
-void RedBlackTree::load(string filename) {
+RedBlackTree RedBlackTree::load(string filename) {
     RedBlackTree tree;
 
        string word;
@@ -446,6 +446,8 @@ void RedBlackTree::load(string filename) {
             cout<<"..........................................\n";
             cout<<"Height of dictionary before insetion:" << printHeight(tree.height(tree.root))<<"\n";
             cout<<"..........................................\n";
+
+    return tree;
 
         }
 

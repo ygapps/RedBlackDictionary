@@ -2,13 +2,15 @@
 #include <string>
 #include "RedBlackTree.h"
 #include "fstream"
-RedBlackTree tree;
+//RedBlackTree tree;
+RedBlackTree tree=tree.load(R"(C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\Dictionary.txt)");
 
 static void printDicSize(RedBlackTree tree){
     cout<<"Size of the Dictionary is "<<tree.getSize()<<"\n";
 }
 static void printRBTHeight(RedBlackTree tree){
-    int height=tree.height(tree.getRoot())-1;
+    int oldHeight = tree.height(tree.getRoot());
+    int height =tree.printHeight(oldHeight);
     cout<<"Height of Red black tree is "<<height<<"\n";
 }
 static void insert(RedBlackTree tree){
@@ -38,13 +40,13 @@ int main() {
 
 
 
-    tree.load(R"(E:\6th term\ds2\assignment1\ass2\Dictionary.txt)");
     cout<<"\t\t\t\t\t\t              ************Welcome to Dictionary*********\n";
     int choice=0;
     while(choice!=5)
     {
         cout<<"\t\t\t\t\t                           *********menu:**********\n";
-        cout<<"enter:\n\t\t\t\t\t1:inset a word                 \n\t\t\t\t\t2:search for a word \n\t\t\t\t\t3:print height of a tree          \n\t\t\t\t\t4:print size of tree        \n\t\t\t\t\t5:exit\n";
+        cout<<"enter:\n\t\t\t\t\t1:inset a word                  \n\t\t\t\t\t2:search for a word \n\t\t\t\t\t3:print height of a tree          \n\t\t\t\t\t4:print size of tree        \n\t\t\t\t\t5:exit\n";
+        //cout<<tree.getRoot()->data;
         cout<<"answer:";
         cin>>choice;
 
@@ -60,11 +62,11 @@ int main() {
                 break;
             }
             case 3: {
-                printDicSize(tree);
+                printRBTHeight(tree);
                 break;
             }
             case 4: {
-                printRBTHeight(tree);
+                printDicSize(tree);
                 break;
             }
             case 5: {
@@ -77,16 +79,7 @@ int main() {
             }
         }
     }
-
-
-    //printf("Enter a sentence: \n");
-    //gets(sentence);
-    //char* token = strtok(sentence," ");
-    //while(token!=NULL)
-    //{
-      //  Search(root,token);
-        //token=strtok(NULL," ");
-   // }
+    
 
     return 0;
 }

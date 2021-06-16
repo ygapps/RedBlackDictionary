@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/6th term/ds2/assignment1/ass2/RedBlackNode.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackNode.cpp.obj"
-  "E:/6th term/ds2/assignment1/ass2/RedBlackTree.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackTree.cpp.obj"
-  "E:/6th term/ds2/assignment1/ass2/main.cpp" "E:/6th term/ds2/assignment1/ass2/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/main.cpp.obj"
+  "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackNode.cpp" "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackNode.cpp.obj"
+  "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackTree.cpp" "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/RedBlackTree.cpp.obj"
+  "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/main.cpp" "C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

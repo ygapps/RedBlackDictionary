@@ -53,7 +53,7 @@ public:
   void leftRotate(NodePtr x);
   void rightRotate(NodePtr x);
   void insert(string key);
-  void load(string filename);
+  RedBlackTree load(string filename);
 
   NodePtr getRoot();
 
