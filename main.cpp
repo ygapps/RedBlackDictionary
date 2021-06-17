@@ -7,7 +7,7 @@ RedBlackTree tree=tree.load(R"(../Dictionary.txt)"); //function to load dictiona
 
 
 static void printDicSize(RedBlackTree tree){
-    cout<<"Size of the Dictionary is "<<tree.getSize()<<"\n";   // printing number of nodes
+    cout<<"Size of the Dictionary is "<<tree.getSize(tree.getRoot())<<"\n";   // printing number of nodes
 }
 static void printRBTHeight(RedBlackTree tree){
     int oldHeight = tree.height(tree.getRoot());

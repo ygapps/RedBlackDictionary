@@ -199,9 +199,12 @@ int RedBlackTree::printHeight(int oldHeight){
   else
     return oldHeight-1;
 }
-int RedBlackTree::getSize()
+int RedBlackTree::getSize(NodePtr node)
 {
-    return  this->tree_size;
+    if(node==TNULL)
+        return 0;
+    else
+        return(getSize(node->left)+1+getSize(node->right));
 }
 RedBlackTree RedBlackTree::load(string filename) {
     RedBlackTree tree;
@@ -232,6 +235,7 @@ RedBlackTree RedBlackTree::load(string filename) {
             cout<<"Dictionary Loaded Successfully...!\n";
             cout<<"..........................................\n";
             cout<<"size of dictionary before insertion :"<<count<<"\n";
+
             cout<<"..........................................\n";
             cout<<"Height of dictionary before insertion:" << printHeight(tree.height(tree.root))<<"\n";
             cout<<"..........................................\n";

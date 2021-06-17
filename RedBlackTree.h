@@ -42,7 +42,7 @@ public:
   void printTree();
   int height(NodePtr root);
   int printHeight(int oldHeight);
-  int getSize();
+  int getSize(NodePtr node);
 
 };
 
