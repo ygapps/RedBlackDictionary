@@ -6,21 +6,37 @@
 
 #IncludeRegexTransform: 
 
-E:/6th term/RBT/RedBlackNode.h
-iostream
--
-string
--
-
-E:/6th term/RBT/RedBlackTree.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.cpp
 RedBlackNode.h
-E:/6th term/RBT/RedBlackNode.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
 iostream
 -
 string
 -
 
-E:/6th term/RBT/main.cpp
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.cpp
+iostream
+-
+fstream
+-
+string
+-
+algorithm
+-
+RedBlackTree.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
+RedBlackNode.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
+iostream
+-
+string
+-
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/main.cpp
 iostream
 -
 string
@@ -28,5 +44,5 @@ string
 algorithm
 -
 RedBlackTree.h
-E:/6th term/RBT/RedBlackTree.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
 
