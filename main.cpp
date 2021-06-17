@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 #include "RedBlackTree.h"
 
 RedBlackTree tree=tree.load(R"(../Dictionary.txt)"); //function to load dictionary file in RBT search tree
@@ -32,6 +33,10 @@ static void search(RedBlackTree tree){
     cout<<"Please Enter the keyword for Searching\n";
    string word;
    cin>>word;
+    std::for_each(word.begin(), word.end(), [](char & c) {
+        c = ::tolower(c);
+    });
+
     string result=tree.searchTree(word)==true? "Found":"Unfound";   //allow user to sear for a word
     cout<<"Keyword  is " <<result<<"\n";
 }

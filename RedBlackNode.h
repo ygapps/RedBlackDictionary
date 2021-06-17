@@ -12,7 +12,7 @@ using namespace std;
 
 
 struct RedBlackNode {
-  string data;
+  std::string data;
   RedBlackNode *parent;
   RedBlackNode *left;
   RedBlackNode *right;

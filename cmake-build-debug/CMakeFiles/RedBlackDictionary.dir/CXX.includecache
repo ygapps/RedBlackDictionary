@@ -12,18 +12,6 @@ iostream
 string
 -
 
-E:/6th term/RBT/RedBlackTree.cpp
-iostream
--
-fstream
--
-string
--
-algorithm
--
-RedBlackTree.h
-E:/6th term/RBT/RedBlackTree.h
-
 E:/6th term/RBT/RedBlackTree.h
 RedBlackNode.h
 E:/6th term/RBT/RedBlackNode.h
@@ -36,6 +24,8 @@ E:/6th term/RBT/main.cpp
 iostream
 -
 string
+-
+algorithm
 -
 RedBlackTree.h
 E:/6th term/RBT/RedBlackTree.h

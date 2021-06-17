@@ -4,14 +4,17 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include<algorithm>
+#include <algorithm>
 #include "RedBlackTree.h"
 
 
 
-NodePtr RedBlackTree::searchTreeHelper(NodePtr node, string key) {
 
-    if (node == TNULL ||key==node->data) {
+
+NodePtr RedBlackTree::searchTreeHelper(NodePtr node,std:: string key) {
+
+    if (node == TNULL || key==node->data) {
+
     return node;
   }
 
@@ -21,6 +24,7 @@ NodePtr RedBlackTree::searchTreeHelper(NodePtr node, string key) {
   return searchTreeHelper(node->right, key);
 }
 bool RedBlackTree::searchTree(string k) {
+
     NodePtr search_helper_result= searchTreeHelper(this->root,k);
     if(search_helper_result==TNULL)return false;
 
@@ -209,6 +213,9 @@ RedBlackTree RedBlackTree::load(string filename) {
         if (file.is_open()) {
             while (getline(file, word)) {
                 file >> word;
+                std::for_each(word.begin(), word.end(), [](char & c) {
+                    c = ::tolower(c);
+                });
                 tree.insert(word);
                 count++;
 
@@ -228,8 +235,7 @@ RedBlackTree RedBlackTree::load(string filename) {
             cout<<"..........................................\n";
             cout<<"Height of dictionary before insertion:" << printHeight(tree.height(tree.root))<<"\n";
             cout<<"..........................................\n";
-            cout <<"key of root :"<<tree.getRoot()->data<<"\n";
-            cout<<"..........................................\n";
+
 
 
 
