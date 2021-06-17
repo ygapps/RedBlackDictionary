@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RedBlackDictionary"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RedBlackDictionary">
+				<Option output="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/RedBlackDictionary.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBlackDictionary"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RedBlackDictionary/fast">
+				<Option output="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/RedBlackDictionary.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBlackDictionary/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.cpp">
+			<Option target="RedBlackDictionary"/>
+		</Unit>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h">
+			<Option target="RedBlackDictionary"/>
+		</Unit>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.cpp">
+			<Option target="RedBlackDictionary"/>
+		</Unit>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h">
+			<Option target="RedBlackDictionary"/>
+		</Unit>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/main.cpp">
+			<Option target="RedBlackDictionary"/>
+		</Unit>
+		<Unit filename="C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

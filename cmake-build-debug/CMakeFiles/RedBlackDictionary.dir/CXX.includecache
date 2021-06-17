@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.cpp
+RedBlackNode.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
+iostream
+-
+string
+-
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.cpp
+iostream
+-
+fstream
+-
+string
+-
+algorithm
+-
+RedBlackTree.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
+RedBlackNode.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackNode.h
+iostream
+-
+string
+-
+
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/main.cpp
+iostream
+-
+string
+-
+algorithm
+-
+RedBlackTree.h
+C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/RedBlackTree.h
+
