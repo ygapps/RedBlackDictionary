@@ -4,45 +4,14 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include<algorithm>
 #include "RedBlackTree.h"
 
-void RedBlackTree::initializeNULLNode(NodePtr node, NodePtr parent) {
-  node->data = "";
-  node->parent = parent;
-  node->left = nullptr;
-  node->right = nullptr;
-  node->color = 0;
-}
 
-// Preorder
-void RedBlackTree::preOrderHelper(NodePtr node) {
-  if (node != TNULL) {
-    cout << node->data << " ";
-    preOrderHelper(node->left);
-    preOrderHelper(node->right);
-  }
-}
-
-// Inorder
-void RedBlackTree::inOrderHelper(NodePtr node) {
-  if (node != TNULL) {
-    inOrderHelper(node->left);
-    cout << node->data << " ";
-    inOrderHelper(node->right);
-  }
-}
-
-// Post order
-void RedBlackTree::postOrderHelper(NodePtr node) {
-  if (node != TNULL) {
-    postOrderHelper(node->left);
-    postOrderHelper(node->right);
-    cout << node->data << " ";
-  }
-}
 
 NodePtr RedBlackTree::searchTreeHelper(NodePtr node, string key) {
-  if (node == TNULL || key == node->data) {
+
+    if (node == TNULL ||key==node->data) {
     return node;
   }
 
@@ -56,129 +25,6 @@ bool RedBlackTree::searchTree(string k) {
     if(search_helper_result==TNULL)return false;
 
     return true;
-}
-
-// For balancing the tree after deletion
-void RedBlackTree::deleteFix(NodePtr x) {
-  NodePtr s;
-  while (x != root && x->color == 0) {
-    if (x == x->parent->left) {
-      s = x->parent->right;
-      if (s->color == 1) {
-        s->color = 0;
-        x->parent->color = 1;
-        leftRotate(x->parent);
-        s = x->parent->right;
-      }
-
-      if (s->left->color == 0 && s->right->color == 0) {
-        s->color = 1;
-        x = x->parent;
-      } else {
-        if (s->right->color == 0) {
-          s->left->color = 0;
-          s->color = 1;
-          rightRotate(s);
-          s = x->parent->right;
-        }
-
-        s->color = x->parent->color;
-        x->parent->color = 0;
-        s->right->color = 0;
-        leftRotate(x->parent);
-        x = root;
-      }
-    } else {
-      s = x->parent->left;
-      if (s->color == 1) {
-        s->color = 0;
-        x->parent->color = 1;
-        rightRotate(x->parent);
-        s = x->parent->left;
-      }
-
-      if (s->right->color == 0 && s->right->color == 0) {
-        s->color = 1;
-        x = x->parent;
-      } else {
-        if (s->left->color == 0) {
-          s->right->color = 0;
-          s->color = 1;
-          leftRotate(s);
-          s = x->parent->left;
-        }
-
-        s->color = x->parent->color;
-        x->parent->color = 0;
-        s->left->color = 0;
-        rightRotate(x->parent);
-        x = root;
-      }
-    }
-  }
-  x->color = 0;
-}
-
-void RedBlackTree::rbTransplant(NodePtr u, NodePtr v) {
-  if (u->parent == nullptr) {
-    root = v;
-  } else if (u == u->parent->left) {
-    u->parent->left = v;
-  } else {
-    u->parent->right = v;
-  }
-  v->parent = u->parent;
-}
-
-void RedBlackTree::deleteNodeHelper(NodePtr node, string key) {
-  NodePtr z = TNULL;
-  NodePtr x, y;
-  while (node != TNULL) {
-    if (node->data == key) {
-      z = node;
-    }
-
-    if (node->data <= key) {
-      node = node->right;
-    } else {
-      node = node->left;
-    }
-  }
-
-  if (z == TNULL) {
-    cout << "Key not found in the tree" << endl;
-    return;
-  }
-
-  y = z;
-  int y_original_color = y->color;
-  if (z->left == TNULL) {
-    x = z->right;
-    rbTransplant(z, z->right);
-  } else if (z->right == TNULL) {
-    x = z->left;
-    rbTransplant(z, z->left);
-  } else {
-    y = minimum(z->right);
-    y_original_color = y->color;
-    x = y->right;
-    if (y->parent == z) {
-      x->parent = y;
-    } else {
-      rbTransplant(y, y->right);
-      y->right = z->right;
-      y->right->parent = y;
-    }
-
-    rbTransplant(z, y);
-    y->left = z->left;
-    y->left->parent = y;
-    y->color = z->color;
-  }
-  delete z;
-  if (y_original_color == 0) {
-    deleteFix(x);
-  }
 }
 
 // For balancing the tree after insertion
@@ -243,62 +89,6 @@ void RedBlackTree::printHelper(NodePtr root, string indent, bool last) {
     printHelper(root->right, indent, true);
   }
 }
-
-void RedBlackTree::preorder() {
-  preOrderHelper(this->root);
-}
-
-void RedBlackTree::inorder() {
-  inOrderHelper(this->root);
-}
-
-void RedBlackTree::postorder() {
-  postOrderHelper(this->root);
-}
-
-
-
-NodePtr RedBlackTree::minimum(NodePtr node) {
-  while (node->left != TNULL) {
-    node = node->left;
-  }
-  return node;
-}
-
-NodePtr RedBlackTree::maximum(NodePtr node) {
-  while (node->right != TNULL) {
-    node = node->right;
-  }
-  return node;
-}
-
-NodePtr RedBlackTree::successor(NodePtr x) {
-  if (x->right != TNULL) {
-    return minimum(x->right);
-  }
-
-  NodePtr y = x->parent;
-  while (y != TNULL && x == y->right) {
-    x = y;
-    y = y->parent;
-  }
-  return y;
-}
-
-NodePtr RedBlackTree::predecessor(NodePtr x) {
-  if (x->left != TNULL) {
-    return maximum(x->left);
-  }
-
-  NodePtr y = x->parent;
-  while (y != TNULL && x == y->left) {
-    x = y;
-    y = y->parent;
-  }
-
-  return y;
-}
-
 void RedBlackTree::leftRotate(NodePtr x) {
   NodePtr y = x->right;
   x->right = y->left;
@@ -382,9 +172,7 @@ NodePtr RedBlackTree::getRoot() {
   return this->root;
 }
 
-void RedBlackTree::deleteNode(string data) {
-  deleteNodeHelper(this->root, data);
-}
+
 
 void RedBlackTree::printTree() {
   if (root) {
@@ -411,12 +199,6 @@ int RedBlackTree::getSize()
 {
     return  this->tree_size;
 }
-/*int RedBlackTree::size(NodePtr node){
-  if(node == TNULL)
-    return 0;
-  else
-    return(size(node->left)+ 1 + size(node->right));
-}*/
 RedBlackTree RedBlackTree::load(string filename) {
     RedBlackTree tree;
 
@@ -444,8 +226,12 @@ RedBlackTree RedBlackTree::load(string filename) {
             cout<<"..........................................\n";
             cout<<"size of dictionary before insertion :"<<count<<"\n";
             cout<<"..........................................\n";
-            cout<<"Height of dictionary before insetion:" << printHeight(tree.height(tree.root))<<"\n";
+            cout<<"Height of dictionary before insertion:" << printHeight(tree.height(tree.root))<<"\n";
             cout<<"..........................................\n";
+            cout <<"key of root :"<<tree.getRoot()->data<<"\n";
+            cout<<"..........................................\n";
+
+
 
     return tree;
 

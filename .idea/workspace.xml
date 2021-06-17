@@ -74,12 +74,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="RedBlackDictionary" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RedBlackDictionary" TARGET_NAME="RedBlackDictionary" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RedBlackDictionary" RUN_TARGET_NAME="RedBlackDictionary">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedBlackDictionary" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RedBlackDictionary" TARGET_NAME="RedBlackDictionary" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RedBlackDictionary" RUN_TARGET_NAME="RedBlackDictionary">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -105,6 +105,7 @@
       <workItem from="1623687737752" duration="1171000" />
       <workItem from="1623820216510" duration="23925000" />
       <workItem from="1623855271807" duration="2755000" />
+      <workItem from="1623877564919" duration="7835000" />
     </task>
     <task id="LOCAL-00001" summary="modification in main">
       <created>1623851652229</created>
@@ -134,16 +135,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modification in main" />
     <option name="LAST_COMMIT_MESSAGE" value="modification in main" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/RedBlackTree.cpp</url>
-          <line>442</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

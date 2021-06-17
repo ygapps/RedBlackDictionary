@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\applications\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "E:\applications\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Kimo Store\CLionProjects\RedBlackDictionary"
+CMAKE_SOURCE_DIR = "E:\6th term\RBT"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\6th term\RBT\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ clean: CMakeFiles/RedBlackDictionary.dir/clean
 CMakeFiles/RedBlackDictionary.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedBlackDictionary.dir\build.make CMakeFiles/RedBlackDictionary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedBlackDictionary.dir\build.make CMakeFiles/RedBlackDictionary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target RedBlackDictionary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\6th term\RBT\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target RedBlackDictionary"
 .PHONY : CMakeFiles/RedBlackDictionary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RedBlackDictionary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\cmake-build-debug\CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\6th term\RBT\cmake-build-debug\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RedBlackDictionary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\6th term\RBT\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/RedBlackDictionary.dir/rule
 
 # Convenience name for target.

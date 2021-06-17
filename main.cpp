@@ -1,20 +1,20 @@
 #include <iostream>
 #include <string>
 #include "RedBlackTree.h"
-#include "fstream"
-//RedBlackTree tree;
-RedBlackTree tree=tree.load(R"(C:\Users\Kimo Store\CLionProjects\RedBlackDictionary\Dictionary.txt)");
+
+RedBlackTree tree=tree.load(R"(../Dictionary.txt)"); //function to load dictionary file in RBT search tree
+
 
 static void printDicSize(RedBlackTree tree){
-    cout<<"Size of the Dictionary is "<<tree.getSize()<<"\n";
+    cout<<"Size of the Dictionary is "<<tree.getSize()<<"\n";   // printing number of nodes
 }
 static void printRBTHeight(RedBlackTree tree){
     int oldHeight = tree.height(tree.getRoot());
-    int height =tree.printHeight(oldHeight);
+    int height =tree.printHeight(oldHeight);                 //printing the height of tree
     cout<<"Height of Red black tree is "<<height<<"\n";
 }
 static void insert(RedBlackTree tree){
-    cout<<"Please Enter the Keyword for Insertion:";
+    cout<<"Please Enter the Keyword for Insertion:";       //allow user to insert word
     string word;
     cin>>word;
 
@@ -32,7 +32,7 @@ static void search(RedBlackTree tree){
     cout<<"Please Enter the keyword for Searching\n";
    string word;
    cin>>word;
-    string result=tree.searchTree(word)==true? "Found":"Unfound";
+    string result=tree.searchTree(word)==true? "Found":"Unfound";   //allow user to sear for a word
     cout<<"Keyword  is " <<result<<"\n";
 }
 

@@ -6,27 +6,37 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackNode.h
+E:/6th term/RBT/RedBlackNode.h
 iostream
 -
 string
 -
 
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackTree.h
+E:/6th term/RBT/RedBlackTree.cpp
+iostream
+-
+fstream
+-
+string
+-
+algorithm
+-
+RedBlackTree.h
+E:/6th term/RBT/RedBlackTree.h
+
+E:/6th term/RBT/RedBlackTree.h
 RedBlackNode.h
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackNode.h
+E:/6th term/RBT/RedBlackNode.h
 iostream
 -
 string
 -
 
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/main.cpp
+E:/6th term/RBT/main.cpp
 iostream
 -
 string
 -
 RedBlackTree.h
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/RedBlackTree.h
-fstream
-C:/Users/Kimo Store/CLionProjects/RedBlackDictionary/fstream
+E:/6th term/RBT/RedBlackTree.h
 
