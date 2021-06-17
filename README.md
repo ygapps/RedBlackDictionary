@@ -16,7 +16,7 @@ Ahmed's Tasks:
 
 Rwan's Tasks:
 
-1. Load dictionary in main 
-2. Print Dictionary Size
-3. Insert Word
-4. Look-up a Word
+1. Load dictionary in main ✅
+2. Print Dictionary Size✅
+3. Insert Word ✅
+4. Look-up a Word ✅
