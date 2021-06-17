@@ -1,3 +1,0 @@
-C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/CMakeFiles/RedBlackDictionary.dir
-C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Kimo Store/Documents/GitHub/RedBlackDictionary/cmake-build-debug/CMakeFiles/rebuild_cache.dir
