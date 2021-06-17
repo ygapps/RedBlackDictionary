@@ -1,5 +1,8 @@
 # RedBlackDictionary
 
+In order to run the program go to cmake-build-debug/RedBlackDictionary.exe
+To run and debug : open with CLion but clear cache first as follow https://www.jetbrains.com/help/clion/invalidate-caches.html
+
 Youssef's Tasks:
 
 1. Setup Project ✅
